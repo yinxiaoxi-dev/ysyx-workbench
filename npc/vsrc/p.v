@@ -1,9 +1,16 @@
-module example(
+module p(
   input a,
   input b,
-  output f
+  output f,
+	output g,
+	output k
 );
+
+	initial begin $display("hello world"); end
   assign f = a ^ b;
+	assign k = a | b;
+	assign g = '1 ;
+
 endmodule
 
 
